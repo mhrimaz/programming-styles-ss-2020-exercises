@@ -29,7 +29,8 @@ class TestWordIndex(unittest.TestCase):
 
     def test_output_is_not_none(self):
         # Execute
-        wi_main()
+        # you can give your own file as the argument and compare it with the content of another file
+        wi_main(sys.argv[1])
 
         # Copy the value to a string. Note that at this point you cannot print anything to console,
         # use the debugger instead
